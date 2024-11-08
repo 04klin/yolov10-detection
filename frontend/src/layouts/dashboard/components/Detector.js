@@ -25,8 +25,7 @@ const Detector = () => {
 
   useEffect(() => {
     const init = async () => {
-      // const baseModelURL = `${window.location.href}/model`;
-      const baseModelURL = `https://yolov10-detection.netlify.app/model`;
+      const baseModelURL = `${window.location.href}/model`;
       // create session
       const arrBufNet = await download(
         `${baseModelURL}/${modelName}`, // url
